@@ -1,0 +1,92 @@
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Karthik/OneDrive/Desktop/abc/.git/
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git add .
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git commit -m "master first commit"
+On branch master
+nothing to commit, working tree clean
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git log --online
+fatal: unrecognized argument: --online
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git log --online
+fatal: unrecognized argument: --online
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git log --online
+fatal: unrecognized argument: --online
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git log --oneline
+e742ca6 (HEAD -> master) master first commit
+92d47b5 master first commit
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git branch
+* master
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git branch child
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git branch
+  child
+* master
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git switch child
+Switched to branch 'child'
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (child)
+$ git status
+On branch child
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        login.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (child)
+$ git add .
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (child)
+$ git commit-m "child first commit"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (child)
+$ git commit -m "child first commit"
+[child e590c39] child first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 login.txt.txt
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (child)
+$ git switch master
+Switched to branch 'master'
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git merge child
+Updating e742ca6..e590c39
+Fast-forward
+ login.txt.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 login.txt.txt
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (master)
+$ git branch -d child
+Deleted branch child (was e590c39).
+
+Karthik@Karthik_MA MINGW64 ~/OneDrive/Desktop/abc (master)
+$
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
